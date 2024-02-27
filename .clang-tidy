@@ -1,0 +1,42 @@
+---
+Checks: >
+  -*,
+  bugprone-*,
+  google-*,
+  misc-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  -google-readability-braces-around-statements,
+  -misc-const-correctness,
+  -misc-include-cleaner,
+  -readability-braces-around-statements,
+  -readability-identifier-length,
+  -readability-magic-numbers,
+  -readability-named-parameter,
+  -readability-redundant-declaration,
+  -readability-function-cognitive-complexity,
+  -bugprone-narrowing-conversions,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-implicit-widening-of-multiplication-result
+
+WarningsAsErrors: "*"
+
+CheckOptions:
+  - { key: readability-identifier-naming.StructCase,             value: CamelCase  }
+  - { key: readability-identifier-naming.FunctionCase,           value: CamelCase  }
+  - { key: readability-identifier-naming.VariableCase,           value: lower_case }
+  - { key: readability-identifier-naming.ClassMemberCase,        value: lower_case }
+  - { key: readability-identifier-naming.EnumConstantCase,         value: CamelCase }
+  - { key: readability-identifier-naming.EnumConstantPrefix,       value: k         }
+  - { key: readability-identifier-naming.ConstexprVariableCase,    value: CamelCase }
+  - { key: readability-identifier-naming.ConstexprVariablePrefix,  value: k         }
+  - { key: readability-identifier-naming.GlobalConstantCase,       value: CamelCase }
+  - { key: readability-identifier-naming.GlobalConstantPrefix,     value: k         }
+  - { key: readability-identifier-naming.MemberConstantCase,       value: CamelCase }
+  - { key: readability-identifier-naming.MemberConstantPrefix,     value: k         }
+  - { key: readability-identifier-naming.StaticConstantCase,       value: CamelCase }
+  - { key: readability-identifier-naming.StaticConstantPrefix,     value: k         }
+  - { key: readability-implicit-bool-conversion.AllowIntegerConditions,  value: 1   }
+  - { key: readability-implicit-bool-conversion.AllowPointerConditions,  value: 1   }
+  - { key: readability-function-cognitive-complexity.IgnoreMacros,  value: 1   }
