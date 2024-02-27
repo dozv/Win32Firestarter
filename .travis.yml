@@ -1,0 +1,7 @@
+language: cpp
+os: windows
+script:
+  - mkdir build
+  - pushd build
+  - nmake ..\Makefile
+  - popd
