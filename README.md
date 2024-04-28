@@ -4,8 +4,6 @@
 
 A minimal working Win32 application in C where you can move a single pixel via WASD keys.
 
-![Screenshot of App Window](screenshot.png)
-
 Build
 - Install Visual Studio 2022 with one of these workloads:
     - "Desktop development with C++"
@@ -18,4 +16,3 @@ Run
 - Inside the `build` directory run `app.exe`
 
 Developer [notes](notes.md) inside.
-
